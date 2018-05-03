@@ -1,0 +1,31 @@
+var danBearLaugh = new Audio('sounds/kirito_villain_laugh.wav');
+danBearLaugh.autoplay = false;
+var h1Element = document.querySelector('h1');
+var danbearImg = document.querySelector('.cibai');
+danbearImg.onclick = function() {danBearLaugh.play(); };
+
+function DanBearSFX()
+{
+	danBearLaugh.play();
+}
+
+function ChangeHeader1Content(text)
+{
+	if('string' === typeof(text))
+	{
+		console.log('text is string');
+		if(!IsNullOrEmpty(text)) 
+		{
+			h1Element.textContent = text;
+		}
+	}
+}
+
+ function IsNullOrEmpty(text)
+{
+	var trimmedText = text.trim();
+	console.log("text after trimming: " + trimmedText);
+	var result = (!trimmedText && 0 === trimmedText.length);	
+	console.log("text is " + (result ? "":"not ") + "null or empty");
+	return result;
+}
