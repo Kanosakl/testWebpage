@@ -1,7 +1,11 @@
 var danBearLaugh = new Audio('sounds/kirito_villain_laugh.wav');
 danBearLaugh.autoplay = false;
+
 var h1Element = document.querySelector('h1');
 var danbearImg = document.querySelector('.cibai');
+var buttonAddPara = document.querySelector('button[name="buttonAddPara"]');
+
+buttonAddPara.addEventListener('click', function() {createParagraph();});
 danbearImg.onclick = function() {danBearLaugh.play(); };
 
 function DanBearSFX()
