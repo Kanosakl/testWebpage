@@ -1,6 +1,7 @@
 var chancesLeft;
 var answer;
 var HasWon=false;
+var NaNCount;
 
 var inputBox = document.querySelector("input[name='inputGuess']");
 var hintText = document.querySelector("h3[id='0']");
@@ -20,6 +21,7 @@ function initialize()
 {
     chancesLeft = 10;
     HasWon = false;
+    NaNCount=0;
     answer = Math.round(Math.random()* 100);
     console.log("answer = " + answer);
     inputBox.disabled = false;
@@ -37,6 +39,8 @@ function setInterfaceGameOver()
 {    
     hintText.textContent = (HasWon)? "Congratulation!" : "Game Over,";
     hintText.textContent += " Answer is " + answer;
+    if(NaNCount === 10)
+        hintText.textContent = "BATMAN";
     buttonGuess.onclick = function() {initialize();};
     buttonGuess.textContent = "Restart Game";
     buttonGuess.focus();
@@ -107,6 +111,7 @@ function CompareAnswer(value)
         if(chancesLeft)
             {
                 result = "NaN";
+                NaNCount++;
                 chancesLeft--;
             }
         else
