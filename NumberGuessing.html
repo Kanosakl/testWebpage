@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head>
+        <h1>Number Guessing Game</h1>
+        <h2>Write a number within 1~100 at the textbox below. Hints will be provided if you guessed wrong, try to guess the number!</h2>        
+    </head>
+
+    <body>
+        <p>Enter a guess:</p><input name="inputGuess" type="text" pattern="\d*" maxlength="3"/>       
+        <button name="buttonGuess">Guess</button>
+        <br/>
+        <h3 id="0"></h3>
+        <h4 id="1"></h4>
+        <script src="scripts/NumberGuessing.js"> </script>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

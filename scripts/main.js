@@ -29,3 +29,10 @@ function ChangeHeader1Content(text)
 	console.log("text is " + (result ? "":"not ") + "null or empty");
 	return result;
 }
+
+function createParagraph() {
+  var para = document.createElement('p');
+  para.textContent = 'You clicked the button!';
+  document.body.appendChild(para);
+}
+
