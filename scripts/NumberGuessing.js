@@ -36,7 +36,7 @@ function setInterfaceGameOver()
     hintText.textContent += " Answer is " + answer;
     buttonGuess.onclick = function() {initialize();};
     buttonGuess.textContent = "Restart Game";
-
+    buttonGuess.focus();
     inputBox.disabled = true;
 }
 
