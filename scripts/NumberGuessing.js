@@ -13,6 +13,7 @@ inputBox.addEventListener("keyup", function(event) {
         buttonGuess.click();
     }
 });
+
 initialize();
 
 function initialize()
@@ -28,6 +29,8 @@ function initialize()
 
     buttonGuess.textContent = "Guess";
     buttonGuess.onclick = function() {UICheckAnswer()};
+
+    inputBox.focus();
 }
 
 function setInterfaceGameOver()
