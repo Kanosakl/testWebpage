@@ -25,7 +25,7 @@ function ChangeHeader1Content(text)
 	}
 }
 
- function IsNullOrEmpty(text)
+IsNullOrEmpty = function (text)
 {
 	var trimmedText = text.trim();
 	console.log("text after trimming: " + trimmedText);
