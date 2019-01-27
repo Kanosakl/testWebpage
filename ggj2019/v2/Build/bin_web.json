@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "Fractured Mind",
+"productName": "Aegis",
 "dataUrl": "bin_web.data.unityweb",
 "wasmCodeUrl": "bin_web.wasm.code.unityweb",
 "wasmFrameworkUrl": "bin_web.wasm.framework.unityweb",
