@@ -36,12 +36,12 @@ IsNullOrEmpty = function (text)
 
 function createParagraph() {
   var para = document.createElement('p');
-  if(getRandomArbitrary(1,21) == 20)｛
+  if(getRandomArbitrary(1,21) == 20){
   	DanBearSFX();
 	para.textContent = 'MUAHAHAHAHA';
-  ｝
+  }
   else {
-  	para.textContent = getRandomArbitrary(1,20) == 19?  :'You clicked the button!';
+  	para.textContent = 'You clicked the button!';
   }
   document.body.appendChild(para);
 }
