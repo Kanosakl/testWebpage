@@ -41,7 +41,7 @@ function createParagraph() {
 	para.textContent = 'MUAHAHAHAHA';
   ｝
   else {
-  	para.textContent = getRandomArbitrary(1,20) == 19?  :'You clicked the button!';
+  	para.textContent = 'You clicked the button!';
   }
   document.body.appendChild(para);
 }
